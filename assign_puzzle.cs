@@ -70,13 +70,13 @@ public class Program
     }
 
 
-    static void disp(int[] a)
+    static void disp(int[] a,int n)
     {
         int count = 0;
         Console.WriteLine("\nMatrix is: \n");
         for (int i = 0; i < a.GetLength(0); i++)
         {
-            if (count < 3)
+            if (count < n)
             {
                 Console.Write(a[i] + "\t");
                 count++;
@@ -88,6 +88,7 @@ public class Program
                 count = 1;
             }
         }
+        Console.Write("\n");
     }
 
 
@@ -102,7 +103,7 @@ public class Program
         int[] a = new int[size];
 
         Console.WriteLine("\nEnter array elements = \n");
-        for (int i = 0; i < size; i++)
+        for (int i = 0; i < a.GetLength(0); i++)
         {
             a[i] = 0;
         }
@@ -132,7 +133,7 @@ public class Program
                     pos = P.Right(a, pos, n);
                     break;
                 case 0:
-                    disp(a);
+                    disp(a,n);
                     break;
                 case 1:
                     break;
