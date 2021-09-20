@@ -55,7 +55,7 @@ public class Program
 
     int Right(int[] a, int pos, int n)
     {
-        if (((pos + 1) % n) == 0 || (pos == (a.GetLength(0) - 1)))
+        if (((pos + 1) % n))
         {
             Console.WriteLine("\nInvalid Operation\n");
         }
