@@ -20,23 +20,7 @@ public class Program
         return pos;
     }
 
-    int Down(int[] a, int pos, int n)
-    {
-
-        if (pos >= n * (n - 1))
-        {
-            Console.WriteLine("\nInvalid Operation\n");
-        }
-        else
-        {
-            x = pos + n;
-            a[x] = 1;
-            a[pos] = 0;
-            pos = x;
-        }
-        return pos;
-    }
-
+    
     int Left(int[] a, int pos, int n)
     {
         if ((pos % n) == 0)
@@ -68,6 +52,24 @@ public class Program
         }
         return pos;
     }
+    
+    int Down(int[] a, int pos, int n)
+    {
+
+        if (pos >= n * (n - 1))
+        {
+            Console.WriteLine("\nInvalid Operation\n");
+        }
+        else
+        {
+            x = pos + n;
+            a[x] = 1;
+            a[pos] = 0;
+            pos = x;
+        }
+        return pos;
+    }
+
 
 
     static void disp(int[] a,int n)
