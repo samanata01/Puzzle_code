@@ -121,16 +121,15 @@ public class Program
             {
                 case 2:
                     pos = P.Up(a, pos, n);
-
-                    break;
-                case 8:
-                    pos = P.Down(a, pos, n);
                     break;
                 case 4:
                     pos = P.Left(a, pos, n);
                     break;
                 case 6:
                     pos = P.Right(a, pos, n);
+                    break;
+                case 8:
+                    pos = P.Down(a, pos, n);
                     break;
                 case 0:
                     disp(a,n);
